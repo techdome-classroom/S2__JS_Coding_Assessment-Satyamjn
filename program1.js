@@ -12,7 +12,7 @@ var isValid = function(s) {
                 (c === ')' && stack[stack.length - 1] !== '(') ||
                 (c === '}' && stack[stack.length - 1] !== '{') || 
                 (c === ']' && stack[stack.length - 1] !== '[')) {
-                return false;  // Return false if there is an invalid closing bracket
+                return false; 
             }
             stack.pop();
         }
