@@ -4,7 +4,7 @@
  */
 var romanToInt = function(s) {
     const roman={
-        '1':1,
+        'I':1,
         ''
     }
     
