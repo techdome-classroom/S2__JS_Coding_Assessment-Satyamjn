@@ -12,8 +12,11 @@ var romanToInt = function(s) {
           'D': 500 ,
           'M':1000
     }
+    let ans=0;
+    
     for(let i=s.length-1;i>=0;i--){
-        
+        let current=roman[s[i]];
+
     }
     
 };
