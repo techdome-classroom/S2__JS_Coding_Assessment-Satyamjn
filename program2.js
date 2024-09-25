@@ -18,7 +18,7 @@ var romanToInt = function(s) {
     for(let i=s.length-1;i>=0;i--){
         let current=roman[s[i]];
         if(current<prev){
-            ans-=prev;
+            ans-=current;
         }else{
             ans+=current;
         }
