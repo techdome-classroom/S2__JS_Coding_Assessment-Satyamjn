@@ -5,7 +5,7 @@
 var isValid = function(s) {
     let stack=[];
     for(let c of s){
-        if(c=='c' || c=='{'  || c=='['){
+        if(c=='' || c=='{'  || c=='['){
             stack.push(c);
         }else{
             if(!stack.length || (c==')' && stack[stack.length-1]!='(') ||
