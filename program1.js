@@ -8,7 +8,7 @@ var isValid = function(s) {
         if(c=='c' || c=='{'  || c=='['){
             stack.push(c);
         }else{
-            if(!stack.length || )
+            if(!stack.length || ())
         }
 
     }
