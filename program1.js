@@ -5,7 +5,7 @@
 var isValid = function(s) {
     let stack=[];
     for(let c of s){
-        if(c=='c')
+        if(c=='c' || c=='{' )
     }
     
 };
