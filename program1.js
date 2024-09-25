@@ -3,21 +3,21 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let stack=[];
-    for(let c of s){
-        if(c=='(' || c=='{'  || c=='['){
+    let stack = [];
+    for (let c of s) {
+        if (c === '(' || c === '{' || c === '[') {
             stack.push(c);
-        }else{
-            if(!stack.length || (c==')' && stack[stack.length-1]!='(') ||
-            (c=='}' && stack[stack.length-1]!='{')|| 
-            (c==']' && stack[stack.length-1]!='[')){
-                return true; 
+        } else {
+            if (!stack.length || 
+                (c === ')' && stack[stack.length - 1] !== '(') ||
+                (c === '}' && stack[stack.length - 1] !== '{') || 
+                (c === ']' && stack[stack.length - 1] !== '[')) {
+                return false;  // Return false if there is an invalid closing bracket
             }
             stack.pop();
         }
-
     }
-    return false;
+    return stack.length === 0; 
     
 };
 
