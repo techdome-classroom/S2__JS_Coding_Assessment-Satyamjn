@@ -22,6 +22,7 @@ var romanToInt = function(s) {
         }else{
             ans+=current;
         }
+        prev=current;
 
 
     }
