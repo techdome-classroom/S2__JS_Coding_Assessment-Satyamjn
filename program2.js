@@ -3,6 +3,10 @@
  * @return {number}
  */
 var romanToInt = function(s) {
+    const roman={
+        '1':1,
+        ''
+    }
     
 };
 
